@@ -16,6 +16,7 @@
             background-color: #282c34;
             color: #ffffff;
             text-align: center;
+            overflow: hidden;
         }
         #countdown {
             font-size: 5rem;
@@ -25,13 +26,15 @@
             display: none;
             font-size: 2rem;
             margin-top: 20px;
+            line-height: 1.5;
+            max-width: 80%; /* Ajustar texto dentro de los márgenes */
         }
         #image-container {
             display: none;
             margin-top: 20px;
         }
         #image-container img {
-            max-width: 100%;
+            max-width: 90%; /* Ajusta la imagen al tamaño de la pantalla */
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -50,7 +53,7 @@
 
     <script>
         // Configura la fecha objetivo
-        const targetDate = new Date("2024-12-06T00:05:00"); // Cambia a tu fecha deseada
+        const targetDate = new Date("2024-12-06T00:11:00"); // Cambia a tu fecha deseada
 
         const countdownElement = document.getElementById("countdown");
         const messageElement = document.getElementById("message");
